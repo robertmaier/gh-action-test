@@ -1,0 +1,15 @@
+name: Replace placeholders in PR body
+on: pull_request
+    types: [opened, edited]
+jobs:
+    build:
+        name: Replace placeholders in PR body
+        runs-on: ubuntu-latest
+        steps:
+        - name: replace step
+          id: replace-step
+          uses: actions/pr-body-replace-action@v1
+          with:
+            pr-id: 1234
+        - name: get the output
+          run: echo "Output: ${{steps.replace-step.outputs.pr-id}}"    
