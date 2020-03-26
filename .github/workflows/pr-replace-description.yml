@@ -1,6 +1,5 @@
 name: Replace placeholders in PR body
 on: pull_request
-    types: [opened, edited]
 jobs:
     build:
         name: Replace placeholders in PR body
