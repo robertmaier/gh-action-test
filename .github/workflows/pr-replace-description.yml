@@ -9,4 +9,4 @@ jobs:
           id: replace-step
           uses: robertmaier/pr-body-replace-action@v1
           with:
-            pr-id: 1234
+            pr-id: 2345
