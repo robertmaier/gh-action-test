@@ -10,5 +10,3 @@ jobs:
           uses: actions/pr-body-replace-action@v1
           with:
             pr-id: 1234
-        - name: get the output
-          run: echo "Output: ${{steps.replace-step.outputs.pr-id}}"    
