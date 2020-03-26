@@ -7,6 +7,6 @@ jobs:
         steps:
         - name: replace step
           id: replace-step
-          uses: actions/pr-body-replace-action@v1
+          uses: robertmaier/pr-body-replace-action@v1
           with:
             pr-id: 1234
